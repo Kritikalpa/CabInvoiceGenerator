@@ -16,7 +16,7 @@ namespace CabInvoiceGenerator
         public InvoiceGenerator(RideType rideType)
         {
             this.rideType = rideType;
-            this.rideRepository = rideRepository;
+            this.rideRepository = new RideRepository();
             try
             {
                 if (rideType.Equals(RideType.PREMIUM))
